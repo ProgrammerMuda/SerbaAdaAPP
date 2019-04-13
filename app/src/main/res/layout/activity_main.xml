@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#FFF06F"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/gg1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/onlineshop"/>
+
+      <!--<LinearLayout-->
+          <!--android:layout_marginTop="20dp"-->
+          <!--android:gravity="center"-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="wrap_content"-->
+          <!--android:orientation="horizontal">-->
+
+          <!--<TextView-->
+              <!--android:layout_width="wrap_content"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--android:text="@string/serba"-->
+              <!--android:textSize="50dp"-->
+              <!--android:textColor="#000"-->
+              <!--android:textStyle="bold"/>-->
+
+          <!--<TextView-->
+              <!--android:layout_width="wrap_content"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--android:text="@string/ada"-->
+              <!--android:textSize="30dp"-->
+              <!--android:textStyle="bold"-->
+              <!--android:textColor="#FF1500"/>-->
+
+      <!--</LinearLayout>-->
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@id/gg1"
+        android:id="@+id/lv_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.wang.avi.AVLoadingIndicatorView
+
+            android:id="@+id/avii"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:indicatorColor="#ffff"
+            android:visibility="visible"
+            app:indicatorName="BallClipRotateMultipleIndicator"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
